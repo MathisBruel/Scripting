@@ -1,5 +1,14 @@
 # Système de Nettoyage Automatique de Projets
 
+## 👤 Auteurs
+
+**Mathis Bruel** - Étudiant
+
+**Sebastien Letor** - Étudiant
+
+**Antoine Simon** - Étudiant
+
+
 Un système de nettoyage intelligent et conditionnel pour la gestion automatisée des fichiers temporaires dans une architecture multi-projets.
 
 ## 🚀 Démarrage rapide
@@ -152,13 +161,6 @@ if [ "$STATUT" != "FINISHED" ]; then
 - Vérifier les **logs** après chaque exécution
 - Les dossiers `temp/` sont **vidés mais conservés**
 
-## 👤 Auteurs
-
-**Mathis Bruel** - Étudiant
-
-**Sebastien Letor** - Étudiant
-
-**Antoine Simon** - Étudiant
 
 ---
 
