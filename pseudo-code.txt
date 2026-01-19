@@ -1,0 +1,42 @@
+# INITIALISATION
+LogFile = "/var/log/project_cleanup.log"
+ProjectsRoot = "/projects/"
+CurrentDate = GetCurrentTimestamp()
+
+POUR CHAQUE "ProjectDir" DANS ProjectsRoot:
+    NomProjet = Nom du dossier
+    
+    # 1. VÉRIFICATION DE LA STRUCTURE (Dossier temp)
+    SI Dossier "ProjectDir/temp" n'existe pas:
+        Log(NomProjet, "IGNORÉ", "Dossier temp/ absent")
+        CONTINUER au projet suivant
+    
+    # 2. VÉRIFICATION DE LA STRUCTURE (Dossier results)
+    SI Dossier "ProjectDir/results" n'existe pas:
+        Log(NomProjet, "IGNORÉ", "Dossier results/ absent (condition d'ancienneté impossible)")
+        CONTINUER
+    
+    # 3. VÉRIFICATION DU STATUT
+    Si Fichier "ProjectDir/status.txt" n'existe pas:
+        Log(NomProjet, "IGNORÉ", "Fichier status.txt absent (Projet non terminé)")
+        CONTINUER
+    
+    Statut = Lire contenu de "ProjectDir/status.txt"
+    SI Statut != "FINISHED":
+        Log(NomProjet, "IGNORÉ", "Projet en cours ou statut inconnu : " + Statut)
+        CONTINUER
+
+    # 4. VÉRIFICATION DE L'ANCIENNETÉ DES RÉSULTATS
+    FichiersRecents = Chercher dans "ProjectDir/results/" les fichiers modifiés il y a MOINS de 30 jours
+    SI FichiersRecents n'est pas vide:
+        Log(NomProjet, "IGNORÉ", "Modifications récentes détectées dans results/")
+        CONTINUER
+
+    # 5. NETTOYAGE
+    TENTER:
+        Supprimer TOUS les fichiers dans "ProjectDir/temp/*" (SANS supprimer le dossier lui-même)
+        Log(NomProjet, "NETTOYÉ", "Conditions remplies : Projet fini et résultats stables")
+    SAISI ERREUR:
+        Log(NomProjet, "ERREUR", "Échec lors de la suppression des fichiers")
+
+FIN POUR
