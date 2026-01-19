@@ -1,0 +1,3 @@
+Répertoire racine: /projects/
+fichier de contrôle: status.txt (avec "terminé" ou "en-cours")
+seuil temporel: 30 jours 

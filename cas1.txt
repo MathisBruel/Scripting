@@ -1,0 +1,36 @@
+Cas pratique avec plus de précision
+1. CAS 1 : Nettoyage conditionnel multi-dossiers
+Un répertoire /projects/ contient des sous-dossiers, chacun correspondant à un projet. Le
+nom de chaque sous-dossier est le nom du projet. Le système existant se contente de stocker
+les dossiers et ne réalise aucun traitement automatique.
+Chaque projet peut contenir les éléments suivants :
+• un dossier temp/ contenant des fichiers temporaires ;
+• un dossier results/ contenant des fichiers de résultats finaux ;
+• un dossier config/ contenant des fichiers de configuration ;
+• un fichier texte status.txt.
+Le fichier status.txt, lorsqu’il existe, contient exactement l’une des deux valeurs suivantes
+: FINISHED ou IN_PROGRESS.
+Un projet est considéré comme terminé uniquement si le fichier status.txt existe et contient
+la valeur FINISHED.
+Si le fichier est absent ou contient une autre valeur, le projet est considéré comme non
+terminé.
+Les fichiers temporaires d’un projet peuvent être supprimés uniquement si les deux conditions
+suivantes sont simultanément vérifiées :
+1. le projet est marqué comme terminé ;
+2. aucun fichier du dossier results/ n’a été modifié au cours des 30 derniers jours.
+Les deux conditions sont indissociables. Si l’une des deux n’est pas remplie, aucun fichier ne
+doit être supprimé.
+Tous les projets n’ont pas nécessairement la même structure. Les règles suivantes s’appliquent
+dans les cas incomplets :
+• si le dossier temp/ n’existe pas, aucune action n’est effectuée pour ce projet ;
+• si le dossier results/ n’existe pas, la condition liée à l’ancienneté des résultats est
+considérée comme non remplie et aucun nettoyage n’est effectué ;
+• si le fichier status.txt n’existe pas, le projet est considéré comme non terminé.
+Le script doit parcourir l’ensemble des projets présents dans le répertoire /projects/,
+appliquer les règles ci-dessus projet par projet, et supprimer uniquement les fichiers contenus
+dans les dossiers temp/ éligibles.
+Le script ne doit jamais supprimer de dossiers projets, ni supprimer des fichiers contenus dans
+results/ ou config/.
+Une trace d’exécution doit être produite sous forme d’un fichier de log indiquant, pour chaque
+projet, le nom du projet, l’action réalisée (nettoyé ou ignoré) et la raison de la décision (projet
+non terminé, résultats récents, structure incomplète, etc.).
