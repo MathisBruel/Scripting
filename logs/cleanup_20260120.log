@@ -1,0 +1,37 @@
+[2026-01-20 09:15:55] Projet: Script Start ➢ Action: Info | Raison: Début du script de nettoyage
+[2026-01-20 09:15:56] Projet: projet1 ➢ Action: Nettoyé | Raison: Conditions remplies, dossier 'temp/' nettoyé
+[2026-01-20 09:15:56] Projet: projet2 ➢ Action: Ignoré | Raison: Projet non terminé (statut: IN_PROGRESS)
+[2026-01-20 09:15:56] Projet: projet3 ➢ Action: Ignoré | Raison: Dossier 'results' manquant
+[2026-01-20 09:15:56] Projet: projet4 ➢ Action: Ignoré | Raison: Dossier 'temp' manquant
+[2026-01-20 09:15:56] Projet: projet5 ➢ Action: Ignoré | Raison: Dossier 'results' manquant
+[2026-01-20 09:15:56] Projet: projet6 ➢ Action: Ignoré | Raison: Fichiers récents dans 'results/'
+[2026-01-20 09:15:56] Projet: Script End ➢ Action: Info | Raison: Fin du script de nettoyage
+[2026-01-20 10:52:55] Projet: Script Start ➢ Action: Info | Raison: Début du script de nettoyage
+[2026-01-20 10:52:56] Projet: projet2 ➢ Action: Ignoré | Raison: Projet non terminé (statut: IN_PROGRESS)
+[2026-01-20 10:52:56] Projet: projet3 ➢ Action: Ignoré | Raison: Dossier 'results' manquant
+[2026-01-20 10:52:56] Projet: projet4 ➢ Action: Ignoré | Raison: Dossier 'temp' manquant
+[2026-01-20 10:52:56] Projet: projet5 ➢ Action: Ignoré | Raison: Dossier 'results' manquant
+[2026-01-20 10:52:56] Projet: projet6 ➢ Action: Nettoyé | Raison: Conditions remplies, dossier 'temp/' nettoyé
+[2026-01-20 10:52:56] Projet: Script End ➢ Action: Info | Raison: Fin du script de nettoyage
+[2026-01-20 10:55:25] Projet: Script Start ➢ Action: Info | Raison: Début du script de nettoyage
+[2026-01-20 10:55:25] Projet: projet2 ➢ Action: Ignoré | Raison: Projet non terminé (statut: IN_PROGRESS)
+[2026-01-20 10:55:25] Projet: projet3 ➢ Action: Ignoré | Raison: Dossier 'results' manquant
+[2026-01-20 10:55:25] Projet: projet4 ➢ Action: Ignoré | Raison: Dossier 'temp' manquant
+[2026-01-20 10:55:25] Projet: projet5 ➢ Action: Ignoré | Raison: Dossier 'results' manquant
+[2026-01-20 10:55:25] Projet: projet6 ➢ Action: Nettoyé | Raison: Conditions remplies, dossier 'temp/' nettoyé
+[2026-01-20 10:55:25] Projet: Script End ➢ Action: Info | Raison: Fin du script de nettoyage
+[2026-01-20 11:00:25] Projet: Script Start âž¢ Action: Info | Raison: DÃ©but du script de nettoyage
+[2026-01-20 11:00:26] Projet: projet2 âž¢ Action: IgnorÃ© | Raison: Projet non terminÃ© (statut: IN_PROGRESS)
+[2026-01-20 11:00:26] Projet: projet3 âž¢ Action: IgnorÃ© | Raison: Dossier 'results' manquant
+[2026-01-20 11:00:26] Projet: projet4 âž¢ Action: IgnorÃ© | Raison: Dossier 'temp' manquant
+[2026-01-20 11:00:26] Projet: projet5 âž¢ Action: IgnorÃ© | Raison: Dossier 'results' manquant
+[2026-01-20 11:00:26] Projet: projet6 âž¢ Action: NettoyÃ© | Raison: Conditions remplies, dossier 'temp/' nettoyÃ©
+[2026-01-20 11:00:26] Projet: Script End âž¢ Action: Info | Raison: Fin du script de nettoyage
+[2026-01-20 11:02:28] Projet: Script Start > Action: Info | Raison: Debut du script de nettoyage
+[2026-01-20 11:02:28] Projet: projet1 > Action: Nettoye | Raison: Conditions remplies, dossier 'temp/' nettoye
+[2026-01-20 11:02:28] Projet: projet2 > Action: Ignore | Raison: Projet non termine (statut: IN_PROGRESS)
+[2026-01-20 11:02:28] Projet: projet3 > Action: Ignore | Raison: Dossier 'results' manquant
+[2026-01-20 11:02:28] Projet: projet4 > Action: Ignore | Raison: Dossier 'temp' manquant
+[2026-01-20 11:02:28] Projet: projet5 > Action: Ignore | Raison: Dossier 'results' manquant
+[2026-01-20 11:02:28] Projet: projet6 > Action: Ignore | Raison: Fichiers recents dans 'results/'
+[2026-01-20 11:02:28] Projet: Script End > Action: Info | Raison: Fin du script de nettoyage
